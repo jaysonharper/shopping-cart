@@ -52,7 +52,6 @@ const menuItems = [
   { name: "peach", instock: 3 },
   { name: "orange", instock: 1 },
 ];
-ReactDOM.render(
-  <NavBar stockitems={menuItems} />,
-  document.getElementById("root")
-);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<NavBar stockitems={menuItems} />);
